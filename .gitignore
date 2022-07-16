@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+extracted/
+pkg/
+packages/
+*.dll

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <FSTAR_HOME Condition="$(FSTAR_HOME) == ''">..\..\FStar</FSTAR_HOME>
+    <UlibNugetLocation Condition="Exists('$(FSTAR_HOME)\nuget')">$(FSTAR_HOME)\nuget</UlibNugetLocation>
+    <UlibNugetLocation Condition="!Exists('$(FSTAR_HOME)\nuget')">nuget</UlibNugetLocation>
+    <RestoreAdditionalProjectSources>$(UlibNugetLocation);$(RestoreAdditionalProjectSources)</RestoreAdditionalProjectSources>
+  </PropertyGroup>
+
+  <!-- This file eventually would be part of F* SDK -->
+  <Import Project="fsharp.extraction.targets" />
+
+  <ItemGroup>
+    <Compile Include="Program.fst" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ulibfs" Version="0.0.1" />
+  </ItemGroup>
+
+</Project>
