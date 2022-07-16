@@ -10,6 +10,8 @@ For now I place ulibfs package to the nuget folder in the repo, just to not rely
 
 To not pollute Nuget cache, please explicitly say where packages would be restored. Overwise in the future you may need to manually remove that `ulibfs` package.
 
+Also define environment variable `FSTAR_HOME` for root folder of FStar installation.
+
 ```bash
 dotnet restore --packages pkg
 dotnet run --packages pkg
