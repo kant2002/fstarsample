@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <FSTAR_HOME Condition="$(FSTAR_HOME) == ''">..\..\FStar</FSTAR_HOME>
     <UlibNugetLocation Condition="Exists('$(FSTAR_HOME)\nuget')">$(FSTAR_HOME)\nuget</UlibNugetLocation>
-    <UlibNugetLocation Condition="!Exists('$(FSTAR_HOME)\nuget')">nuget</UlibNugetLocation>
+    <UlibNugetLocation Condition="!Exists('$(FSTAR_HOME)\nuget')">..\nuget</UlibNugetLocation>
     <RestoreAdditionalProjectSources>$(UlibNugetLocation);$(RestoreAdditionalProjectSources)</RestoreAdditionalProjectSources>
   </PropertyGroup>
 
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ulibfs" Version="0.0.1" />
+    <PackageReference Include="ulibfs" Version="0.0.2" />
   </ItemGroup>
 
 </Project>
