@@ -25,3 +25,20 @@ then switch to project directory and run usual .NET commands.
 dotnet restore
 dotnet run
 ```
+
+Currently you may notice that each project require to have `fsharp.extraction.targets` file. That's unfortunate until I push build scripts for F* SDK so you can have
+
+```xml
+<Project Sdk="FStarLang.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.fst" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="FStar.Ulib" Version="1.0.0" />
+    <PackageReference Update="FSharp.Core" Version="4.3.4" />
+  </ItemGroup>
+</Project>
+```
