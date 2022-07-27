@@ -21,7 +21,15 @@ Define environment variable `FSTAR_HOME` for root folder of FStar installation.
     <add key="nuget" value="https://api.nuget.org/v3/index.json" />
   </packageSources>
 </configuration>
+```
 
+Create new global.json, or add `msbuild-sdks` values as shown below.
+```json
+{
+  "msbuild-sdks": {
+    "FStarLang.Sdk": "0.0.2"
+  }
+}
 ```
 
 then switch to project directory and run usual .NET commands.

@@ -1,4 +1,4 @@
-﻿<Project Sdk="FStarLang.Sdk/0.0.2">
+﻿<Project Sdk="FStarLang.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
