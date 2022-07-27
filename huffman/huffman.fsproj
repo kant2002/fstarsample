@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <FSTAR_HOME Condition="$(FSTAR_HOME) == ''">..\..\FStar</FSTAR_HOME>
     <UlibNugetLocation Condition="Exists('$(FSTAR_HOME)\nuget')">$(FSTAR_HOME)\nuget</UlibNugetLocation>
-    <UlibNugetLocation Condition="!Exists('$(FSTAR_HOME)\nuget')">..\nuget</UlibNugetLocation>
+    <UlibNugetLocation Condition="!Exists('$(FSTAR_HOME)\nuget')">https://www.myget.org/F/fstar/api/v3/index.json</UlibNugetLocation>
     <RestoreAdditionalProjectSources>$(UlibNugetLocation);$(RestoreAdditionalProjectSources)</RestoreAdditionalProjectSources>
   </PropertyGroup>
 
