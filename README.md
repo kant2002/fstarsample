@@ -42,3 +42,8 @@ Currently you may notice that each project require to have `fsharp.extraction.ta
   </ItemGroup>
 </Project>
 ```
+
+## Notes
+
+`printf` sample does not working. It's hitting https://github.com/FStarLang/FStar/issues/2650 and also require https://github.com/FStarLang/FStar/pull/2656. 
+So please wait.
