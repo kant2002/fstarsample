@@ -12,11 +12,16 @@ I would work on publishing process.
 Define environment variable `FSTAR_HOME` for root folder of FStar installation.
 
 ```xml
+<?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
-	<add key="fstar-experimental" value="https://www.myget.org/F/fstar/api/v3/index.json" />
+    <!--To inherit the global NuGet package sources remove the <clear/> line below -->
+    <clear />
+    <add key="fstar-experimental" value="https://www.myget.org/F/fstar/api/v3/index.json" />
+    <add key="nuget" value="https://api.nuget.org/v3/index.json" />
   </packageSources>
 </configuration>
+
 ```
 
 then switch to project directory and run usual .NET commands.
@@ -26,22 +31,7 @@ dotnet restore
 dotnet run
 ```
 
-Currently you may notice that each project require to have `fsharp.extraction.targets` file. That's unfortunate until I push build scripts for F* SDK so you can have
-
-```xml
-<Project Sdk="FStarLang.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Program.fst" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="FStar.Ulib" Version="1.0.0" />
-    <PackageReference Update="FSharp.Core" Version="4.3.4" />
-  </ItemGroup>
-</Project>
-```
+This sample working using MSBuild SDK from this repo: https://github.com/kant2002/FStarSdk
 
 ## Notes
 
