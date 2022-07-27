@@ -31,7 +31,7 @@ dotnet restore
 dotnet run
 ```
 
-This sample working using MSBuild SDK from this repo: https://github.com/kant2002/FStarSdk
+This sample working using MSBuild SDK from this repo: https://github.com/kant2002/FStarMSBuildSdk
 
 ## Notes
 
