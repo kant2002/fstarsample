@@ -43,5 +43,7 @@ This sample working using MSBuild SDK from this repo: https://github.com/kant200
 
 ## Notes
 
-`printf` sample does not working. It's hitting https://github.com/FStarLang/FStar/issues/2650 and also require https://github.com/FStarLang/FStar/pull/2656. 
+`printf` sample does not working. It's hitting https://github.com/FStarLang/FStar/issues/2650 and also require https://github.com/FStarLang/FStar/pull/2656 (landed master, not released). 
 So please wait.
+
+`gc` sample is very much barebone. I would like to make closer to https://github.com/dotnet/runtime/blob/main/src/coreclr/gc/sample/GCSample.cpp in spirit. On the other side, this sample show how you can mix F* and F#

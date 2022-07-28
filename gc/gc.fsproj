@@ -1,0 +1,19 @@
+﻿<Project Sdk="FStarLang.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="nuget.config" />
+    <Compile Include="GC_Memory.fs" />
+    <Compile Include="GC.Memory.fsti" />
+    <Compile Include="GC.Types.fst" />
+    <Compile Include="GC_Env.fs" />
+    <Compile Include="GC.Env.fsti" />
+    <Compile Include="GC.fst" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
