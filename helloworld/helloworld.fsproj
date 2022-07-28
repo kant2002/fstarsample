@@ -10,8 +10,4 @@
     <Compile Include="Program.fst" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include="global.json" />
-  </ItemGroup>
-
 </Project>
