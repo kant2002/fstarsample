@@ -17,7 +17,7 @@ Define environment variable `FSTAR_HOME` for root folder of FStar installation.
   <packageSources>
     <!--To inherit the global NuGet package sources remove the <clear/> line below -->
     <clear />
-    <add key="fstar-experimental" value="https://www.myget.org/F/fstar/api/v3/index.json" />
+    <add key="fstar-experimental" value="https://codevision.pkgs.visualstudio.com/FStarLang/_packaging/fstarlang/nuget/v3/index.json" />
     <add key="nuget" value="https://api.nuget.org/v3/index.json" />
   </packageSources>
 </configuration>
@@ -27,7 +27,7 @@ Create new global.json, or add `msbuild-sdks` values as shown below.
 ```json
 {
   "msbuild-sdks": {
-    "FStarLang.Sdk": "0.0.2"
+    "FStarLang.Sdk": "0.0.3"
   }
 }
 ```
