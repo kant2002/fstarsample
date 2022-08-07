@@ -27,7 +27,7 @@ Create new global.json, or add `msbuild-sdks` values as shown below.
 ```json
 {
   "msbuild-sdks": {
-    "FStarLang.Sdk": "0.0.3"
+    "FStarLang.Sdk": "0.0.6"
   }
 }
 ```
