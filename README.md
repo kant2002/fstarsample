@@ -17,7 +17,6 @@ Define environment variable `FSTAR_HOME` for root folder of FStar installation.
   <packageSources>
     <!--To inherit the global NuGet package sources remove the <clear/> line below -->
     <clear />
-    <add key="fstar-experimental" value="https://codevision.pkgs.visualstudio.com/FStarLang/_packaging/fstarlang/nuget/v3/index.json" />
     <add key="nuget" value="https://api.nuget.org/v3/index.json" />
   </packageSources>
 </configuration>
@@ -27,7 +26,7 @@ Create new global.json, or add `msbuild-sdks` values as shown below.
 ```json
 {
   "msbuild-sdks": {
-    "FStarLang.Sdk": "0.1.0"
+    "FStarLang.Sdk": "0.1.2"
   }
 }
 ```
@@ -47,3 +46,5 @@ This sample working using MSBuild SDK from this repo: https://github.com/kant200
 So please wait.
 
 `gc` sample is very much barebone. I would like to make closer to https://github.com/dotnet/runtime/blob/main/src/coreclr/gc/sample/GCSample.cpp in spirit. On the other side, this sample show how you can mix F* and F#
+
+Currently export can work only on F# 5.0, please set this language `<LangVersion>5.0</LangVersion>` in the project.
