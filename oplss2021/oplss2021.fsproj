@@ -1,0 +1,25 @@
+﻿<Project Sdk="FStarLang.Sdk">
+
+  <PropertyGroup>
+    <!--<OutputType>Exe</OutputType>-->
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>5.0</LangVersion>
+    <OtherFlags>--mlcompatibility</OtherFlags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="nuget.config" />
+    <Compile Include="PrimsEx.fs" />
+    <Compile Include="OPLSS2021.Vale.fst" />
+    <None Include="OPLSS2021.ValeVC.fst" />
+    <Compile Include="OPLSS2021.Factorial.fst" />
+    <Compile Include="OPLSS2021.Demo1.fst" />
+    <Compile Include="OPLSS2021.Basic.fst" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="ulibfs" Version="0.0.3" />
+  </ItemGroup>
+
+</Project>
