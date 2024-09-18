@@ -5,3 +5,5 @@ extracted/
 pkg/
 packages/
 *.dll
+*.user
+*.binlog
