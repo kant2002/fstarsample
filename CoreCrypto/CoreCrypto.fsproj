@@ -1,0 +1,22 @@
+﻿<Project Sdk="FStarLang.Sdk">
+
+  <PropertyGroup>
+    <!--<OutputType>Exe</OutputType>-->
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>5.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="FStar_Bytes.fs" />
+    <None Include="nuget.config" />
+    <Compile Include="Platform.Bytes.fst" />
+    <Compile Include="CryptoTypes.fst" />
+    <Compile Include="CoreCrypto.fst" />
+    <Compile Include="DHDB.fst" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="ulibfs" Version="0.0.3" />
+  </ItemGroup>
+
+</Project>

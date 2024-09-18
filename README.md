@@ -47,4 +47,6 @@ So please wait.
 
 `gc` sample is very much barebone. I would like to make closer to https://github.com/dotnet/runtime/blob/main/src/coreclr/gc/sample/GCSample.cpp in spirit. On the other side, this sample show how you can mix F* and F#
 
+`CryptoCore` sample extracts, but does not have working code. This is for my personal testing.
+
 Currently export can work only on F# 5.0, please set this language `<LangVersion>5.0</LangVersion>` in the project.
